@@ -1,0 +1,20 @@
+Data Analysis Codebook
+======================
+
+
+The run_analysis script produces a new data frame containing the mean of each feature from the original feature
+vector described in features_info.text. 
+
+The first two columns of the new data frame are the Subject and the Activity identifiers, with column names
+"subject" and "activity".
+
+The new features are named by appending the string "Subject-Activity-Mean" onto the names of the original 
+features. The original feature names have all dashes and parentheses replaced by a single dash. 
+
+For example, in the new dataset the averages for the feature
+
+tBodyAcc-mean()-X
+
+are labeled as 
+
+Subject-Activity-Mean-tBodyAcc-mean-X
