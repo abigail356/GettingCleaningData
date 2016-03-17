@@ -56,8 +56,8 @@ read.dataset <- function (ds,features) {
     
     # Rename activity factor values 
     activityNames <-read.table('./activity_labels.txt',row.names=1,stringsAsFactors=FALSE)
-    actv <- actlables[,1]
-    names(actv) <- rownames(actlables)
+    actv <- activityNames[,1]
+    names(actv) <- rownames(activityNames)
     dsActivities[,1] <- revalue(dsActivities[,1],actv)
     
     cbind(dsSubjects,dsActivities,dsData)
